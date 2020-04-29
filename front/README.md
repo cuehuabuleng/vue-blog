@@ -1,24 +1,16 @@
-# my-blog
+# 前端部分：
 
-## Project setup
-```
+# 下载完整个项目后，在终端打开front目录，命令行输入
+
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# 安装完依赖之后
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# 执行 
 
-### Lints and fixes files
-```
-npm run lint
-```
+ npm run serve 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ # 项目运行在localhost ：8008 端口上
+
+ # 打开浏览器访问 
+ http://localhost:8008/#/home 
