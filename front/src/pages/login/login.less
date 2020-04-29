@@ -1,0 +1,303 @@
+.login-box-wrapper {
+    background: url("../../assets/imgs/bg-01.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-box {
+      background: #fff;
+      border-radius: 10px;
+      width: 600px;
+      padding: 65px 65px 10px 65px;
+      box-sizing: border-box;
+      .form {
+        width: 100%;
+        .backhome {
+          display: block;
+          padding: 10px 0;
+          font-size: 20px;
+          color: gray;
+        }
+        .login-lg {
+          text-align: center;
+          display: block;
+          font-size: 42px;
+          color: #333333;
+          line-height: 1.2;
+          font-family: "Microsoft Yahei";
+          padding-bottom: 49px;
+        }
+        .login-username-wrapper {
+          width: 100%;
+          border-bottom: 3px solid #d9d9d9;
+          margin-bottom: 23px;
+          position: relative;
+          .username-tip {
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: 30px;
+            border: solid #c80000 1px;
+            padding: 6px;
+            box-sizing: border-box;
+            background: white;
+            span {
+              color: #c80000;
+              padding-right: 5px;
+              font-size: 15px;
+              font-weight: 600;
+            }
+            i {
+              color: #c80000;
+              font-size: 21px;
+              font-weight: 600;
+            }
+          }
+          span {
+            font-family: "Microsoft Yahei";
+            font-size: 19px;
+            color: #333333;
+            line-height: 1.5;
+            padding-left: 7px;
+          }
+          .login-username {
+            position: relative;
+            transition: all linear 0.8s;
+            input {
+              height: 65px;
+              font-family: "Microsoft Yahei";
+              font-size: 19px;
+              color: #333333;
+              width: 100%;
+              line-height: 65px;
+              padding: 0 7px 0 50px;
+              box-sizing: border-box;
+            }
+            i {
+              height: calc(100% - 0px);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #adadad;
+              font-size: 25px;
+              font-weight: bold;
+              padding-left: 13px;
+              padding-top: 3px;
+            }
+            .username-icon-color {
+              color: #902592a9;
+            }
+          }
+          .login-username:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0px;
+            height: 3px;
+            background: #7f7f7f;
+            transition: all linear 0.3s;
+          }
+          .login-username-width:before {
+            width: 100% !important;
+            transition: all linear 0.3s;
+          }
+        }
+  
+        .login-password-wrapper {
+          width: 100%;
+          border-bottom: 3px solid #d9d9d9;
+          margin-bottom: 23px;
+          position: relative;
+          .password-tip {
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: 30px;
+            border: solid #c80000 1px;
+            padding: 6px;
+            box-sizing: border-box;
+            background: white;
+            span {
+              color: #c80000;
+              padding-right: 5px;
+              font-size: 15px;
+              font-weight: 600;
+            }
+            i {
+              color: #c80000;
+              font-size: 21px;
+              font-weight: 600;
+            }
+          }
+          span {
+            font-family: "Microsoft Yahei";
+            font-size: 19px;
+            color: #333333;
+            line-height: 1.5;
+            padding-left: 7px;
+          }
+          .login-password {
+            position: relative;
+            input {
+              height: 65px;
+              font-family: "Microsoft Yahei";
+              font-size: 19px;
+              color: #333333;
+              width: 100%;
+              line-height: 65px;
+              padding: 0 7px 0 50px;
+              box-sizing: border-box;
+            }
+            i {
+              height: calc(100% - 0px);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #adadad;
+              font-size: 25px;
+              font-weight: bold;
+              padding-left: 13px;
+              padding-top: 3px;
+            }
+            .password-icon-color {
+              color: #902592a9;
+            }
+          }
+          .login-password:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0px;
+            height: 3px;
+            background: #7f7f7f;
+            transition: all linear 0.3s;
+          }
+          .login-password-width:before {
+            content: "";
+            width: 100% !important;
+            transition: all linear 0.3s;
+          }
+        }
+        .login-forget {
+          padding-bottom: 31px;
+          padding-top: 8px;
+          text-align: right;
+          a {
+            font-family: "Microsoft Yahei";
+            font-size: 16px;
+            line-height: 1.7;
+            color: #666666;
+            margin: 0px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            cursor: pointer;
+          }
+          span :hover {
+            color: #a64bf4;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+          }
+        }
+        .login-sbmbtn-wrapper {
+          width: 100%;
+          display: block;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          border-radius: 25px;
+          margin: 0 auto;
+          -webkit-box-shadow: -1px 5px 20px 0px rgba(3, 216, 222, 0.2);
+          box-shadow: -1px 5px 20px 0px rgba(3, 216, 222, 0.2);
+          .login-btn-layer {
+            position: absolute;
+            z-index: -1;
+            width: 300%;
+            height: 100%;
+            left: -100%;
+            background: #a64bf4;
+            background: -webkit-linear-gradient(
+              right,
+              #00dbde,
+              #fc00ff,
+              #00dbde,
+              #fc00ff
+            );
+            top: 0;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+          }
+          .login-btn-layer:hover {
+            left: 0;
+          }
+          button {
+            font-size: 20px;
+            color: #fff;
+            outline: none !important;
+            border: none;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            width: 100%;
+            height: 55px;
+            cursor: pointer;
+          }
+        }
+        .to-register {
+          padding-top: 30px;
+          text-align: center;
+          text-decoration: none;
+          .to-register-a {
+            color: #000;
+            font-size: 18px;
+          }
+        }
+        .otherway{
+            position: relative;
+            margin-top: 45px;;
+            span{
+                display: block;
+                position: absolute;
+                top: -7px;
+                background: white;
+                left: 189px;
+                padding: 0 10px;
+                color: gray;
+            }
+            div{
+                text-align: center;
+                padding-top: 40px;
+                color: #818080e8;
+                i{
+                  font-size: 30px;
+                  cursor: pointer;
+                }
+            }
+        }
+        .otherway:before{
+            content: '';
+            width: 100%;
+            position: absolute;
+            height: 1px;
+            background-color: #3b3b3b54;
+        }
+      }
+    }
+  }

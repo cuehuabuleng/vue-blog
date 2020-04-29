@@ -1,0 +1,238 @@
+.not-allowed {
+    background: gray;
+    pointer-events: none;
+  }
+  .allowed {
+    background: #10a6edf7;
+    cursor: pointer;
+  }
+  .comment-wrapper {
+    // height: 100vh;
+    position: relative;
+    max-width: 892px;
+    margin: 0 auto;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+      1px 3px 8px rgba(39, 44, 49, 0.03);
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+      1px 3px 8px rgba(39, 44, 49, 0.03);
+    background-color: hsla(0, 0%, 100%, 0.9);
+    border-radius: 5px;
+    .write-comment {
+      textarea {
+        border: 1px solid #808080ab;
+        resize: none;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #fafafa;
+      }
+      .btn {
+        text-align: right;
+        margin: 15px 0px;
+        button {
+          margin-right: 15px;
+          border: none;
+          border-radius: 5px;
+          box-sizing: border-box;
+          padding: 8px 5px;
+          min-width: 100px;
+          height: auto;
+          color: white;
+          font-weight: 500;
+          width: 200px;
+          font-size: 16px;
+          font-family: cursive;
+        }
+      }
+    }
+    .comment-list {
+      padding: 10px;
+      .total-comment {
+        font-size: 24px;
+      }
+      box-sizing: border-box;
+      .item {
+        margin-top: 25px;
+        display: flex;
+        .user-img {
+          height: 100%;
+          img {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #eee;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        .item-comment-wrapper {
+          margin-left: 15px;
+          line-height: 20px;
+          flex: 1;
+          .username {
+            span {
+              font-size: 18px;
+            }
+          }
+          .dscription {
+            span {
+              margin-right: 10px;
+              font-size: 12px;
+              color: #969696;
+            }
+          }
+          .content {
+            font-size: 19px;
+            margin: 10px 0px;
+            line-height: 30px;
+            font-family: serif;
+          }
+          .option {
+            height: 20px;
+            text-align: right;
+            span {
+              // font-size: 19px;
+              font-weight: 600;
+              font-family: serif;
+              color: #969696;
+              cursor: pointer;
+              display: inline-block;
+              height: 20px;
+              margin-right: 5px;
+            }
+            .like_red{
+              color: #ff00007a;
+            }
+            .like_number_wraper{
+              display: inline-block;
+              overflow: hidden;
+              margin-left: 5px;
+              height: 20px;
+              vertical-align: top;
+              .like_number{
+                transition: all .2s;
+                span{
+                  display: block;
+                }
+              }
+              .like_animation{
+                transform: translateY(-20px);
+                transition: all .2s;
+                span{
+                  color: #ff00007a;;
+                }
+              }
+            }
+          }
+          .reply {
+            transition: all 0.2s;
+            margin-top: 20px;
+            textarea {
+              border: 1px solid #808080ab;
+              resize: none;
+              display: block;
+              width: 100%;
+              height: 100px;
+              padding: 10px;
+              box-sizing: border-box;
+              border-radius: 10px;
+              background-color: #fafafa;
+            }
+            div {
+              margin-top: 15px;
+              text-align: right;
+              button {
+                margin-right: 15px;
+                border: none;
+                border-radius: 5px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 8px 5px;
+                min-width: 50px;
+                height: auto;
+                color: white;
+                font-weight: 500;
+                width: 80px;
+                font-size: 16px;
+                font-family: cursive;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .reply_hide_class {
+            transition: all 0.2s;
+            animation: slideHide 0.3s ease-in;
+          }
+          @keyframes slideShow {
+            0% {
+              transform: scale(1, 0);
+            }
+            100% {
+              transform: scale(1, 1);
+            }
+          }
+          .reply_show_class {
+            transition: all 0.2s;
+            animation: slideShow 0.3s ease-in;
+          }
+          @keyframes slideHide {
+            0% {
+              transform: scale(1, 1);
+            }
+            100% {
+              transform: scale(1, 0);
+            }
+          }
+          .reply-content-wrapper {
+            .reply-user {
+              display: flex;
+              a {
+                img {
+                  width: 40px;
+                  height: 40px;
+                  border: 1px solid #eee;
+                  border-radius: 50%;
+                  overflow: hidden;
+                }
+              }
+              div {
+                margin-left: 15px;
+                .username {
+                  span {
+                    font-size: 18px;
+                  }
+                }
+                .dscription {
+                  span {
+                    margin-right: 10px;
+                    font-size: 12px;
+                    color: #969696;
+                  }
+                }
+              }
+            }
+            .reply-content {
+              margin: 10px 0px;
+              line-height: 20px;
+            }
+            .reply-option {
+              text-align: right;
+              span {
+                font-size: 16px;
+                font-weight: 600;
+                font-family: serif;
+                color: #969696;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
