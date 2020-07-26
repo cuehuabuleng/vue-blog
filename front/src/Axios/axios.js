@@ -18,7 +18,7 @@ export default class Axios {
         if (options.isMock) {
             baseApi = 'http://localhost:3000'
         } else {
-            baseApi = 'http://121.196.207.132:8082'
+            baseApi = 'http://114.55.93.74:3000'
         }
         return new Promise((resolve) => {
 
