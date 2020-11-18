@@ -1,4 +1,8 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const productiongzipextensions = ['js', 'css'];
+const isproduction = process.env.node_env === 'production';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   devServer: {
     port: 8008, // 端口
@@ -12,5 +16,7 @@ module.exports = {
     config.plugin('provide').use(webpack.ProvidePlugin, [{
       'window.Quill': 'quill'
     }])
-  }
+  },
+
+  // 配置compression-webpack-plugin压缩
 }

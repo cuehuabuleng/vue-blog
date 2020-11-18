@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { Message } from "element-ui";
 axios.defaults.withCredentials = true;
+
+const env = process.env.NODE_ENV; //环境参数
 // import router from '../../src/router/index'
 //axios  response拦截器
 // axios.interceptors.response.use(function (response) {
@@ -15,7 +17,7 @@ export default class Axios {
     static ajax(options) {
         // window.console.log('ajax', options)
         let baseApi = '';
-        if (options.isMock) {
+        if (env === 'development') {
             baseApi = 'http://localhost:3000'
         } else {
             baseApi = 'http://114.55.93.74:3000'
@@ -26,7 +28,7 @@ export default class Axios {
                 url: options.url,
                 method: options.method,
                 baseURL: baseApi,
-                timeout: 10000,
+                timeout: 20000,
                 data: options.data ? options.data : null,
                 params: options.params ? options.params : null,
                 headers: {
